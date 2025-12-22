@@ -1,0 +1,4 @@
+.list { padding: 16rpx; }
+.item { display:flex; justify-content:space-between; align-items:center; background:#fff; border-radius:12rpx; padding:20rpx; margin-bottom:16rpx; }
+.title { font-weight:600; font-size:28rpx; }
+.empty { color:#888; text-align:center; margin-top: 40rpx; }

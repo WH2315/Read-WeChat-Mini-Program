@@ -1,0 +1,17 @@
+<view class="wrap">
+  <view class="title">{{novel.title}}</view>
+  <view class="meta">作者：{{novel.author}}</view>
+  <view class="desc">{{novel.desc}}</view>
+  <view class="actions">
+    <button type="primary" bindtap="startRead">开始阅读</button>
+    <button bindtap="addShelf">加入书架</button>
+  </view>
+  <view class="chapters">
+    <view class="subtitle">章节目录</view>
+    <block wx:for="{{novel.chapters}}" wx:key="id">
+      <view class="chapter" bindtap="readChapter" data-index="{{index}}">
+        {{item.title}}
+      </view>
+    </block>
+  </view>
+</view>

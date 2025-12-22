@@ -1,0 +1,4 @@
+.wrap { padding: 16rpx; }
+.title { font-size: 32rpx; font-weight: 600; }
+.date { color: #888; margin: 12rpx 0; }
+.content { color: #555; }

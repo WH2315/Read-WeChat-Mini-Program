@@ -1,0 +1,5 @@
+<view class="wrap">
+  <view class="title">{{item.title}}</view>
+  <view class="date">{{item.date}}</view>
+  <view class="content">{{item.content}}</view>
+</view>

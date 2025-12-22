@@ -1,0 +1,9 @@
+<view class="list">
+  <block wx:for="{{items}}" wx:key="id">
+    <view class="item" bindtap="goDetail" data-id="{{item.id}}">
+      <view class="title">{{item.title}}</view>
+      <view class="summary">{{item.summary}}</view>
+      <view class="date">{{item.date}}</view>
+    </view>
+  </block>
+</view>

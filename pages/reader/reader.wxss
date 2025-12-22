@@ -1,0 +1,4 @@
+.reader { display:flex; flex-direction:column; height:100vh; }
+.title { font-size:28rpx; padding: 20rpx 16rpx; }
+.content { flex:1; padding: 0 16rpx; }
+.toolbar { display:flex; gap: 16rpx; padding: 16rpx; border-top: 1px solid #eee; background:#fff; }

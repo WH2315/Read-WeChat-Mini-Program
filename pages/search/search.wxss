@@ -1,0 +1,6 @@
+.wrap { padding: 16rpx; }
+.bar { display:flex; gap: 12rpx; align-items:center; }
+.bar input { flex:1; border:1px solid #ddd; border-radius: 8rpx; padding: 12rpx; background:#fff; }
+.section { margin-top: 16rpx; }
+.subtitle { font-weight: 600; margin-bottom: 8rpx; }
+.item { background:#fff; border-radius:12rpx; padding:16rpx; margin-bottom:12rpx; }

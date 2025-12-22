@@ -1,0 +1,9 @@
+<view class="list">
+  <block wx:for="{{novels}}" wx:key="id">
+    <view class="item">
+      <view class="title" bindtap="open" data-id="{{item.id}}">{{item.title}}</view>
+      <button size="mini" type="warn" bindtap="remove" data-id="{{item.id}}">移除</button>
+    </view>
+  </block>
+  <view wx:if="{{novels.length===0}}" class="empty">书架为空，可在详情页加入。</view>
+</view>

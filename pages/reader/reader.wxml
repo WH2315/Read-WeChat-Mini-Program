@@ -1,0 +1,10 @@
+<view class="reader">
+  <view class="title">{{chapter.title}}</view>
+  <scroll-view scroll-y="true" class="content">
+    <text>{{chapter.content}}</text>
+  </scroll-view>
+  <view class="toolbar">
+    <button bindtap="prev" disabled="{{chapterIndex<=0}}">上一章</button>
+    <button bindtap="next" disabled="{{chapterIndex>=novel.chapters.length-1}}">下一章</button>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/library/library",
+    "pages/detail/detail",
+    "pages/reader/reader",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail",
+    "pages/search/search",
+    "pages/bookshelf/bookshelf"
+  ],
+  "window": {
+    "navigationBarTitleText": "悦读",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f7f7",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#07c160",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/library/library", "text": "小说" },
+      { "pagePath": "pages/news/news", "text": "新闻" },
+      { "pagePath": "pages/bookshelf/bookshelf", "text": "书架" }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

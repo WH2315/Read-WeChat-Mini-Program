@@ -1,0 +1,9 @@
+<view class="list">
+  <block wx:for="{{novels}}" wx:key="id">
+    <view class="item" bindtap="goDetail" data-id="{{item.id}}">
+      <view class="title">{{item.title}}</view>
+      <view class="meta">{{item.author}}</view>
+      <view class="desc">{{item.desc}}</view>
+    </view>
+  </block>
+</view>

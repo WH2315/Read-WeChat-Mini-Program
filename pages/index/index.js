@@ -1,0 +1,3 @@
+Page({
+  onPullDownRefresh(){ wx.stopPullDownRefresh(); }
+});

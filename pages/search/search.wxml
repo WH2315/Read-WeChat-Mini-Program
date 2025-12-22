@@ -1,0 +1,18 @@
+<view class="wrap">
+  <view class="bar">
+    <input placeholder="搜索小说 / 新闻" value="{{keyword}}" bindinput="onInput"/>
+    <button type="primary" bindtap="doSearch">搜索</button>
+  </view>
+  <view class="section">
+    <view class="subtitle">小说</view>
+    <block wx:for="{{results.novels}}" wx:key="id">
+      <view class="item" bindtap="goNovel" data-id="{{item.id}}">{{item.title}} - {{item.author}}</view>
+    </block>
+  </view>
+  <view class="section">
+    <view class="subtitle">新闻</view>
+    <block wx:for="{{results.news}}" wx:key="id">
+      <view class="item" bindtap="goNews" data-id="{{item.id}}">{{item.title}}</view>
+    </block>
+  </view>
+</view>
