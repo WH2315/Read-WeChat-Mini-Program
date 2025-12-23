@@ -1,3 +1,8 @@
 page { background: #f7f7f7; }
 .text-ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .card { background:#fff; border-radius:12rpx; box-shadow:0 4rpx 12rpx rgba(0,0,0,.05); }
+
+/* 主题基础 */
+.theme-light { background:#f7f7f7; color:#111; }
+.theme-dark { background:#0f1115; color:#e8e8e8; }
+.theme-dark .card { background:#161a21; box-shadow:0 4rpx 12rpx rgba(0,0,0,.35); }

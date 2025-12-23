@@ -1,5 +1,6 @@
 const BS_KEY = 'bookshelf';
 const RP_KEY = 'reading_progress';
+const SETTINGS_KEY = 'reading_settings';
 
 function getBookshelf() { return wx.getStorageSync(BS_KEY) || []; }
 function addToBookshelf(id) {
@@ -23,4 +24,28 @@ function getProgress(novelId) {
   return p[novelId] || { chapterIndex: 0 };
 }
 
-module.exports = { getBookshelf, addToBookshelf, removeFromBookshelf, saveProgress, getProgress };
+function getSettings() {
+  const s = wx.getStorageSync(SETTINGS_KEY) || {};
+  return {
+    theme: s.theme || 'light',
+    fontSize: s.fontSize || 30,
+    lineHeight: s.lineHeight || 1.7
+  };
+}
+
+function saveSettings(patch) {
+  const current = getSettings();
+  const next = { ...current, ...patch };
+  wx.setStorageSync(SETTINGS_KEY, next);
+  return next;
+}
+
+module.exports = {
+  getBookshelf,
+  addToBookshelf,
+  removeFromBookshelf,
+  saveProgress,
+  getProgress,
+  getSettings,
+  saveSettings
+};

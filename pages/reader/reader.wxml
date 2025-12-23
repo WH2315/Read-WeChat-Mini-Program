@@ -1,7 +1,16 @@
-<view class="reader">
+<view class="reader {{theme === 'dark' ? 'theme-dark' : 'theme-light'}}">
   <view class="title">{{chapter.title}}</view>
+
+  <view class="settings">
+    <button size="mini" bindtap="toggleTheme">{{theme === 'dark' ? '日间' : '夜间'}}</button>
+    <button size="mini" bindtap="decFont">A-</button>
+    <button size="mini" bindtap="incFont">A+</button>
+  </view>
+
   <scroll-view scroll-y="true" class="content">
-    <text>{{chapter.content}}</text>
+    <block wx:for="{{paragraphs}}" wx:key="index">
+      <view class="para" style="font-size: {{fontSize}}rpx; line-height: {{lineHeight}};">{{item}}</view>
+    </block>
   </scroll-view>
   <view class="toolbar">
     <button bindtap="prev" disabled="{{chapterIndex<=0}}">上一章</button>

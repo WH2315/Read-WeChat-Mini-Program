@@ -5,12 +5,16 @@
   </view>
   <view class="section">
     <view class="subtitle">小说</view>
+    <view wx:if="{{loading}}" class="tip">搜索中...</view>
+    <view wx:if="{{error}}" class="tip error">搜索失败，重试试试</view>
+    <view wx:if="{{!loading && !error && keyword && results.novels.length === 0}}" class="tip">暂无匹配小说</view>
     <block wx:for="{{results.novels}}" wx:key="id">
       <view class="item" bindtap="goNovel" data-id="{{item.id}}">{{item.title}} - {{item.author}}</view>
     </block>
   </view>
   <view class="section">
     <view class="subtitle">新闻</view>
+    <view wx:if="{{!loading && !error && keyword && results.news.length === 0}}" class="tip">暂无匹配新闻</view>
     <block wx:for="{{results.news}}" wx:key="id">
       <view class="item" bindtap="goNews" data-id="{{item.id}}">{{item.title}}</view>
     </block>

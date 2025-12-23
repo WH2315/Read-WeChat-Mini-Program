@@ -1,9 +1,9 @@
 <view class="container">
   <view class="banner">悦读 · 微信小程序示例</view>
   <view class="grid">
-    <navigator url="/pages/library/library" class="card">小说</navigator>
-    <navigator url="/pages/news/news" class="card">新闻</navigator>
+    <navigator url="/pages/library/library" open-type="switchTab" class="card">小说</navigator>
+    <navigator url="/pages/news/news" open-type="switchTab" class="card">新闻</navigator>
     <navigator url="/pages/search/search" class="card">搜索</navigator>
-    <navigator url="/pages/bookshelf/bookshelf" class="card">书架</navigator>
+    <navigator url="/pages/bookshelf/bookshelf" open-type="switchTab" class="card">书架</navigator>
   </view>
 </view>

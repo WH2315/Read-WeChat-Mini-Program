@@ -3,3 +3,5 @@
 .title { font-weight:600; font-size:28rpx; }
 .meta { color:#888; margin:8rpx 0; }
 .desc { color:#555; }
+.tip { color:#888; text-align:center; margin: 24rpx 0; }
+.error { color:#d9534f; }

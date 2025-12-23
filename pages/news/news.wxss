@@ -3,3 +3,5 @@
 .title { font-weight:600; font-size:28rpx; }
 .summary { color:#555; margin:8rpx 0; }
 .date { color:#888; }
+.tip { color:#888; text-align:center; margin: 24rpx 0; }
+.error { color:#d9534f; }
